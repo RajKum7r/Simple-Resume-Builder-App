@@ -4,11 +4,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test</title>
+    <title>Resume builder</title>
+
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+        body,
+        html {
+            font-family: montserrat, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #222;
+            color: white;
+            height: 100%;
+            width: 100%;
+        }
+
+        .container {
+            background: linear-gradient(135deg, rgb(107, 57, 188), rgb(30, 63, 88));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .container .content {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 2rem;
+            border-radius: 8px;
+            max-width: 800px;
+            margin: 10px;
+        }
+
+
+        span {
+            color: rgb(238, 208, 13);
+        }
+
+        #point {
+            color: red;
+            font-size: 50px;
+        }
+
+        h1,
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+
+        }
+
+        h2 {
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+        }
+
+        .resume {
+            display: flex;
+            justify-content: space-evenly;
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 2rem;
+            border-radius: 8px;
+        }
+
+        p {
+            color: #333;
+            margin-bottom: 20px;
+            font: bold;
+        }
+
+        #already-resume {
+            color: green;
+        }
+
+
+        a {
+            text-decoration: none;
+        }
+    </style>
 </head>
 
 <body>
 
+    <div class="container">
+        <div class="content">
+            <h1><u>Welcome "Raj kumar"</u></h1>
+            <h1>Create your <span>Resume</span> / <span>Cover Letter</span> <span id="point">.</span></h1>
+            <p>*click for the below link ..</p>
+            <p>* if <span id="already-resume">already</span> to upload file <input type="file">.</p>
+            <div class="resume">
+
+                <a href="#">
+                    <h2>Resume CV</h2>
+                </a>
+                <a href="#">
+                    <h2>Cover letter</h2>
+                </a>
+            </div>
+
+
+
+        </div>
+    </div>
 </body>
 
 </html>
